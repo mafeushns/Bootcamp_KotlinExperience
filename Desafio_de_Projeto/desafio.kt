@@ -38,15 +38,15 @@ fun main() {
     	contentList.add(moduleKotlinI)
   		contentList.add(moduleAndroidStudioI)
    
-    val luan = Users("Luan","Moraes", "luanmoraes@gmail.com", Post.STUDENT)
-    val camili = Users("Camili","Compagnoni", "camilicompagnoni@gmail.com", Post.STUDENT)
-    val venilton = Users("Venilto","Falvo", "veniltonfalvo@gmail.com", Post.TEACHER)
+    val user1 = Users("Matheus","Henrique", "henrique@gmail.com", Post.STUDENT)
+    val user2 = Users("Juliana","Macedo", "macedo@gmail.com", Post.STUDENT)
+    val user3 = Users("Venilto","Falvo", "veniltonfalvo@gmail.com", Post.TEACHER)
    
     val androidTraining = Formation("Formação Android Developer", contentList, Level.INTERMEDIARY)
      
-    androidTraining.addUser(luan)
-    androidTraining.addUser(camili)
-    androidTraining.addUser(venilton)
+    androidTraining.addUser(user1)
+    androidTraining.addUser(user2)
+    androidTraining.addUser(user3)
    
   	println(" -----------------------------------------")
     println("|${androidTraining.nome} - ${androidTraining.level}|")
